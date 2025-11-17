@@ -25,7 +25,7 @@ if(Git_FOUND)
         set(GIT_COMMIT_HASH "${gch}")
         message(STATUS gch: ${GIT_COMMIT_HASH})
         add_definitions(-DGIT_COMMIT_HASH="${GIT_COMMIT_HASH}")
-    endif()
+    exit
 endif() #git
 
 if(thread_safety_analysis)
